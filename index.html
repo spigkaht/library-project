@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>JavaScript Exercises</title>
+</head>
+
+<body>
+  <dialog id="dialog" class="modal">
+    <div class="modal-content">
+      <form>
+        <button value="cancel" formmethod="dialog" class="close">&times;</button>
+        <div class="form-section">
+          <label for="titleInput">Enter a book title: </label>
+          <input type="text" name="titleInput" id="titleInput" required />
+        </div>
+        <div class="form-section">
+          <label for="authorInput">Enter the book's author: </label>
+          <input type="text" name="authorInput" id="authorInput" required />
+        </div>
+        <div class="form-section">
+          <label for="pagesInput">Enter the number of pages: </label>
+          <input type="text" name="pagesInput" id="pagesInput" required />
+        </div>
+        <div class="form-section">
+          <label for="readInput">Have you read this book? </label>
+          <input type="text" name="readInput" id="readInput" required />
+        </div>
+        <div class="form-section">
+          <input type="submit" value="Submit" id="submitBtn" />
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <div class="container">
+    <div class="header">
+      <h1>My Books</h1>
+      <button id="newBookBtn">New Book</button>
+    </div>
+    <table id="booktable">
+      <th>Title</th>
+      <th>Author</th>
+      <th># Pages</th>
+      <th>Read?</th>
+    </table>
+  </div>
+  <output></output>
+</body>
+
+</html>
